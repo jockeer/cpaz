@@ -1,0 +1,49 @@
+:root{
+    --naranja-claro:#F68C1F;
+    --naranja-oscuro: #EF6620;
+}
+.Jumbotron{
+    width: 100%;
+    background: #fff url('../img/fondo1.png') no-repeat;
+    background-size: 100%;
+    background-position-y: 70%;
+    min-height: 60vh;
+    height: 60vh;
+}
+
+.Jumbotron .container-jumbo{
+    display: grid;
+    padding: 0 100px;
+    grid-template-columns: 50% 50%;
+    height: inherit;
+}
+.Jumbotron .container-jumbo figure{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Jumbotron .container-jumbo img{
+    width: 80%;
+}
+.Jumbotron .container-jumbo .redes-sociales{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.Jumbotron .container-jumbo .redes-sociales h2{
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    -webkit-text-stroke: 2px black;
+    font-size: 3.5rem;
+    color: var(--naranja-oscuro);
+}
+.Jumbotron .container-jumbo .redes-sociales .logos-redes-sociales{
+    text-align: center;
+    width: 100%;
+}
+.Jumbotron .container-jumbo .redes-sociales .logos-redes-sociales a img{
+    width: 100px;
+    margin: 0 20px;
+}

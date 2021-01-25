@@ -1,0 +1,76 @@
+:root{
+    --naranja-claro:#F68C1F;
+    --naranja-oscuro: #EF6620;
+    --cafe: #61380C;
+}
+nav.navbar.navbar-expand-lg.navbar.bg{
+    display: block;
+    width: 100%;
+    min-height: 7vh;
+    height: 7vh;
+    background-color: var(--cafe);
+    padding: 0;
+    
+}
+nav .container-fluid{
+    height: inherit;
+    padding: 0 100px;
+}
+nav .container-fluid .collapse.navbar-collapse{
+    height: inherit;
+}
+nav ul{
+    margin: 0;
+    height: inherit;
+}
+nav ul a{
+    color: white;
+    text-decoration: none;
+    height: inherit;
+    border-left: 1px solid var(--naranja-claro);
+    padding: 0 20px;
+}
+nav ul a:nth-of-type(1){
+    border-left: none;
+}
+nav ul a li{
+    height: inherit;
+    display: flex;
+    align-items: center;
+}
+nav ul a li .container-logo-home{
+    display: flex;
+    
+}
+nav ul .btn-home {
+    height: inherit;
+    display: flex;
+    align-items: center;
+}
+nav ul a .container-logo-home{
+border-radius: 50%;
+background-color: var(--naranja-claro);
+border: 2px solid white;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+nav ul a .container-logo-home img{
+    padding: 5px;
+    box-sizing: content-box;
+    width: 35px;
+    
+}
+nav ul p{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+}
+nav .container-fluid .d-flex a{
+    display: flex;
+    justify-content: flex-end;
+}
+nav .container-fluid .d-flex a img{
+    width: 7%;
+}
