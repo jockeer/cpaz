@@ -1,0 +1,66 @@
+:root{
+    --plomo-bg:white;
+    --naranja-claro:#F68C1F;
+    --naranja-oscuro: #EF6620;
+    --cafe: #61380C;
+    --fuente-gorda:'Chango', cursive;
+    --fuente-formal:'Vollkorn', serif;
+}
+
+.container-carousel{
+    width: 100%;
+    background: transparent;
+}
+
+.container-carousel .titulo{
+    font-size: 40px;
+    color: var(--naranja-oscuro);
+    font-weight: bold;
+   
+    font-family: var(--fuente-gorda);
+
+}
+.container-carousel .carousel-home a{
+    color: black;
+    text-decoration: none;
+}
+
+
+/*======ESILOS DEL PACKETE MODIFICADOS=======*/
+.sc-jSgupP.ewJlEB.rec.rec-carousel-wrapper.caruselpruba{
+    
+    background: transparent;
+}
+.lgksPe{
+    background-color: var(--naranja-claro);
+    color:white !important;
+    box-shadow: 0 0 2px 0px #333 !important;
+}
+.lgksPe:focus:enabled{
+    background-color: var(--naranja-oscuro) !important;
+    outline: 0;
+}
+.lgksPe:hover:enabled{
+    background-color: var(--naranja-oscuro) !important;
+    outline: 0;
+    
+}
+.iLquPE{
+    background: red;
+}
+.iLquPE:disabled{
+    
+    background-color: rgb(226, 226, 226);
+    color: white;
+    outline: 0;
+}
+.cJeRRR{  
+    background-color:var(--naranja-claro) !important;
+    box-shadow: 0 0 1px 3px var(--naranja-oscuro) !important;
+}
+
+.sc-bdfBwQ.lgksPe.rec.rec-arrow.rec.rec-arrow-right,.sc-bdfBwQ.lgksPe.rec.rec-arrow.rec.rec-arrow-left{
+    background-color:var(--naranja-oscuro)
+}
+
+/*===========================================*/

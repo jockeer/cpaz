@@ -1,0 +1,103 @@
+:root{
+    --plomo-bg:white;
+    --naranja-claro:#F68C1F;
+    --naranja-oscuro: #EF6620;
+    --cafe: #61380C;
+}
+article .container-comics{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 50px;
+}
+article .container-comics .comic-main{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+    padding: 50px;
+    margin: 2rem 0 0 ;
+    width: 100%;
+    height: auto;
+    background: white;
+    border: 3px solid rgb(43, 43, 43);
+    margin-bottom: 20px;
+    
+}
+article .container-comics .comic-main .item-comic-main img,.comic-main-2 .item-comic-main img{
+    width: 100%;
+    opacity: .9;
+}
+article .container-comics .comic-main .item-comic-main,.comic-main-2 .item-comic-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    min-height: 200px;
+    /* border-radius: 5px; */
+    border: 3px solid rgb(73, 73, 73);
+    background: white;
+}
+article .container-comics .comic-main-2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+    padding: 50px;
+    margin: 2rem 0 0 ;
+    background: white;
+    border: 3px solid  rgb(43, 43, 43);
+    margin-bottom: 20px;
+}
+
+.container-titulo .titulo-home{
+    color: var(--naranja-oscuro);
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: end;
+    padding-top: 15px; 
+    position: relative;
+    margin-bottom: 0;
+}
+.container-titulo .titulo-home.linea::before{
+    content: "";
+    width: 50px;
+    height: 10px;
+    border-radius: 20px;
+    background-color: var(--cafe);
+    position: absolute;
+    right: 5px;
+    
+}
+.subitulo-home{
+    color: var(--naranja-oscuro);
+    font-weight: bold;
+    margin-top: 30px;
+    font-size: 60px;
+}
+
+
+
+@media screen and (max-width: 1023px){
+    
+  }
+  @media screen and (max-width: 991px){
+    
+  }
+  @media screen and (max-width: 767px){
+    
+  }
+  @media screen and (max-width: 599px){
+    
+  }
+  @media screen and (max-width: 479px){
+    .container-titulo .titulo-home {
+        color: var(--naranja-oscuro);
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: end;
+        padding-top: 15px;
+        position: relative;
+        margin-bottom: 0;
+    }
+  }
+

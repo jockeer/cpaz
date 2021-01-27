@@ -1,6 +1,9 @@
 :root{
     --naranja-claro:#F68C1F;
     --naranja-oscuro: #EF6620;
+    --cafe: #61380C;
+    -fuente-gorda:'Chango', cursive;
+    --fuente-texto: 'Vollkorn', serif;
 }
 .Jumbotron{
     width: 100%;
@@ -34,16 +37,117 @@
 .Jumbotron .container-jumbo .redes-sociales h2{
     margin-bottom: 20px;
     font-weight: bold;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     -webkit-text-stroke: 2px black;
-    font-size: 3.5rem;
+    font-size: 3.3rem;
     color: var(--naranja-oscuro);
+    font-family: var(--fuente-gorda);
+    
 }
 .Jumbotron .container-jumbo .redes-sociales .logos-redes-sociales{
     text-align: center;
     width: 100%;
 }
 .Jumbotron .container-jumbo .redes-sociales .logos-redes-sociales a img{
-    width: 100px;
+    width: 80px;
     margin: 0 20px;
 }
+
+/*==============================*/
+/*==========RESPONSIVE==========*/
+/*==============================*/
+@media screen and (max-width: 1170px){
+    .Jumbotron{
+        
+        min-height: 50vh;
+        height: 40vh;
+    }
+    .Jumbotron .container-jumbo{
+        
+        padding: 10px;
+    }
+    .Jumbotron .container-jumbo .redes-sociales h2{
+        display: block;
+        font-size: 40px;
+    }
+    .Jumbotron .container-jumbo .redes-sociales .logos-redes-sociales a img {
+        width: 70px;
+        margin: 0 10px;
+    }
+}
+@media screen and (max-width: 1023px){
+    .Jumbotron{
+        
+        min-height: 50vh;
+        height: 40vh;
+    }
+    .Jumbotron .container-jumbo{
+        
+        padding: 10px;
+    }
+    .Jumbotron .container-jumbo .redes-sociales h2{
+        display: block;
+        font-size: 40px;
+    }
+    .Jumbotron .container-jumbo .redes-sociales .logos-redes-sociales a img {
+        width: 45px;
+        margin: 0 10px;
+    }
+}
+@media screen and (max-width: 767px){
+    .Jumbotron{
+        
+        min-height: 20vh;
+        height: 40vh;
+    }
+    .Jumbotron .container-jumbo{
+        display: initial;
+        padding-top: 15px;
+    }
+    .Jumbotron .container-jumbo .redes-sociales h2{
+        display: none;
+    }
+    .Jumbotron .container-jumbo .redes-sociales .logos-redes-sociales a img {
+        width: 55px;
+        margin: 0 10px;
+    }
+}
+@media screen and (max-width: 599px){
+    .Jumbotron{
+        
+        min-height: 20vh;
+        height: auto;
+    }
+    .Jumbotron .container-jumbo{
+        display: initial;
+        padding-top: 15px;
+    }
+    .Jumbotron .container-jumbo .redes-sociales h2{
+        display: none;
+    }
+    .Jumbotron .container-jumbo .redes-sociales .logos-redes-sociales a img {
+        width: 55px;
+        margin: 0 10px;
+    }
+
+}
+@media screen and (max-width: 479px){
+    .Jumbotron{
+        
+        min-height: 20vh;
+        height: auto;
+    }
+    .Jumbotron .container-jumbo{
+        display: initial;
+        padding-top: 15px;
+    }
+    .Jumbotron .container-jumbo .redes-sociales h2{
+        display: none;
+    }
+    .Jumbotron .container-jumbo .redes-sociales .logos-redes-sociales a img {
+        width: 35px;
+        margin: 0 10px;
+    }
+}
+
+

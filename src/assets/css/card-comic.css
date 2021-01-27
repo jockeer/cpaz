@@ -1,0 +1,119 @@
+:root{
+    --plomo-bg:white;
+    --naranja-claro:#F68C1F;
+    --naranja-oscuro: #EF6620;
+    --cafe: #61380C;
+    --cafe-oscuro: #351f07;
+    --fuente-gorda:'Chango', cursive;
+    --fuente-texto: 'Vollkorn', serif;
+}
+.click-card{
+    width: 100%;
+    height: 100%;
+}
+.card{
+    transition: .3s;
+    will-change: transform;
+    transform: scale(.9);
+    min-height: 600px;
+    margin: 0 25px;
+    background: #fff url('../img/franja-21.png') no-repeat;
+    background-position-y: 120%;
+    background-position-x: 120%;
+    position: relative;
+    
+}
+.card:hover{
+    transform: scale(.95);
+    cursor: pointer;
+}
+.card .card-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff url('../img/portada.png');
+    background-size: cover;
+    height: 101%;
+    border-radius: 5px;
+    width: 100%;
+    /* opacity: ; */
+    transition: .3s;
+    /* -webkit-text-stroke: 2px rgb(233, 233, 233); */
+    visibility: visible;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card:hover .card-overlay{
+    opacity: 0;
+    visibility: hidden;
+    
+}
+.card .card-overlay h2{
+    font-size: 30px;
+    color: var(--naranja-oscuro);
+    font-weight: bold;
+   position: relative;
+   top: 15%;
+    font-family: var(--fuente-gorda);
+}
+
+.card .card-header{
+    background-color: var(--cafe);
+    color: white;
+    font-weight: bold;
+    position: relative;
+}
+.card .card-header h6::before{
+    content: '';
+    width: 8%;
+    position: absolute;
+    height: 80px;
+    background-color: var(--naranja-oscuro);
+    right: 0;
+    top: 0;
+}
+.card .card-header h6{
+    margin: 0;
+}
+.card .card-header .card-nro-modulo{
+    position: absolute;
+    right: 2%;
+    font-size: 30px;
+    top: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card .card-body{
+    position: relative;
+}
+.card .card-body .card-sesiones{
+    color: var(--cafe);
+    font-weight: bold;
+    /* text-decoration: un; */
+}
+.card .card-body .container-sesiones ul{
+    list-style: none;
+    padding: 0;
+}
+.card .card-body .container-sesiones ul li{
+    color: rgb(54, 54, 54);
+}
+.card .card-body .container-sesiones ul li span{
+    color: var(--naranja-oscuro);
+    font-weight: bold;
+}
+.card .card-body .card-nro-modulo{
+    color: white;
+    position: absolute;
+    font-size: 10px;
+    bottom: 0;
+    right: 5%;
+    font-weight: bold;
+    background-color: var(--naranja-claro);
+    border-radius: 10px;
+    padding: 5px;
+}

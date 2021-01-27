@@ -3,12 +3,12 @@
     --naranja-oscuro: #EF6620;
     --cafe: #61380C;
 }
-nav.navbar.navbar-expand-lg.navbar.bg{
+nav.navbar.navbar-expand-lg.navbar-light.bg-light{
     display: block;
     width: 100%;
     min-height: 7vh;
     height: 7vh;
-    background-color: var(--cafe);
+    background-color: var(--cafe) !important;
     padding: 0;
     
 }
@@ -74,3 +74,65 @@ nav .container-fluid .d-flex a{
 nav .container-fluid .d-flex a img{
     width: 7%;
 }
+@media screen and (max-width: 1023px){
+    nav .container-fluid .d-flex a img {
+        width: 40px;
+    }
+}
+@media screen and (max-width: 991px){
+    nav .container-fluid{
+        padding: 0 5px;
+    }
+    .navbar-nav{
+        position: relative;
+        z-index: 2;
+    }
+    nav ul a{
+        background-color: rgb(179, 179, 179);
+    }
+}
+@media screen and (max-width: 767px){
+    nav .container-fluid{
+        padding: 0 5px;
+    }
+    .navbar-nav{
+        position: relative;
+        z-index: 2;
+    }
+    nav ul a{
+        background-color: rgb(179, 179, 179);
+    }
+}
+@media screen and (max-width: 599px){
+    nav .container-fluid{
+        padding: 0 5px;
+    }
+    .navbar-nav{
+        position: relative;
+        z-index: 2;
+    }
+    nav ul a{
+        background-color: rgb(179, 179, 179);
+    }
+}
+@media screen and (max-width: 479px){
+    nav .container-fluid{
+        padding: 0 5px;
+    }
+    .navbar-nav{
+        position: relative;
+        z-index: 2;
+    }
+    nav ul a{
+        background-color: rgb(179, 179, 179);
+    }
+}
+/* @media screen and (max-width: 479px){
+    
+}
+@media screen and (max-width: 599px){
+}
+@media screen and (max-width: 767px){
+}
+@media screen and (max-width: 1023px){
+} */
